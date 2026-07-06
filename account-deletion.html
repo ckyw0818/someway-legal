@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SomeWay 계정 및 데이터 삭제 안내</title>
+  <style>
+    :root {
+      --accent: #d94f60;
+      --ink: #1a0e12;
+      --muted: #695b60;
+      --line: #ececec;
+      --bg: #ffffff;
+      --card: #faf7f8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 36px;
+    }
+    .brand {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 800;
+      margin: 40px 0 14px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 14px; font-size: 15.5px; }
+    ol, ul { padding-left: 22px; margin: 0 0 16px; }
+    li { margin-bottom: 8px; font-size: 15.5px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+    }
+    .steps li {
+      position: relative;
+      padding-left: 44px;
+      margin-bottom: 16px;
+      min-height: 30px;
+    }
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: var(--card);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    a { color: var(--accent); }
+    .mail {
+      display: inline-block;
+      font-weight: 800;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 16px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="brand">SomeWay</span>
+      <h1>계정 및 데이터 삭제 안내</h1>
+      <p class="sub">SomeWay 앱 사용자의 계정 및 관련 데이터 삭제 요청 방법을 안내합니다.</p>
+    </header>
+
+    <p>
+      SomeWay는 사용자가 언제든지 본인의 계정과 관련 데이터를 삭제할 수 있도록 지원합니다.
+      아래 두 가지 방법 중 하나로 삭제를 요청하실 수 있습니다.
+    </p>
+
+    <h2>방법 1. 앱에서 직접 삭제 (권장)</h2>
+    <ol class="steps">
+      <li>SomeWay 앱을 실행하고 로그인합니다.</li>
+      <li>하단의 <strong>프로필</strong> 화면으로 이동합니다.</li>
+      <li>화면 하단의 <strong>회원 탈퇴</strong> 버튼을 누릅니다.</li>
+      <li>본인 확인을 위해 비밀번호를 입력(이메일 가입자)하거나 Google 재인증(Google 로그인 사용자)을 완료합니다.</li>
+      <li><strong>탈퇴</strong>를 확인하면 계정과 모든 데이터가 삭제됩니다.</li>
+    </ol>
+
+    <h2>방법 2. 이메일로 삭제 요청</h2>
+    <p>앱에 접근할 수 없는 경우, 가입하신 이메일 주소로 아래 주소에 삭제를 요청해 주세요.</p>
+    <div class="card">
+      <a class="mail" href="mailto:ckyw0818@gmail.com?subject=SomeWay%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">ckyw0818@gmail.com</a>
+      <p style="margin:10px 0 0; color:var(--muted); font-size:14px;">
+        제목에 "계정 삭제 요청"을 적고, 가입 시 사용한 이메일 주소를 본문에 기재해 주세요.
+        본인 확인 후 영업일 기준 최대 30일 이내에 처리됩니다.
+      </p>
+    </div>
+
+    <h2>삭제되는 데이터</h2>
+    <p>계정 삭제 시 다음 데이터가 삭제됩니다.</p>
+    <table>
+      <thead>
+        <tr><th>데이터 유형</th><th>처리 방식</th><th>보관 기간</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>계정 정보 (이메일 주소, 인증 정보)</td><td>삭제</td><td>즉시 삭제</td></tr>
+        <tr><td>대화 상대 및 대화 내용</td><td>삭제</td><td>즉시 삭제</td></tr>
+        <tr><td>코인 잔액 및 이용 기록</td><td>삭제</td><td>즉시 삭제</td></tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted); font-size:14px;">
+      법령상 보관 의무가 있는 최소한의 기록(예: 결제·거래 관련 기록)은 관련 법률이 정한 기간 동안
+      분리 보관 후 파기될 수 있습니다. 그 외 개인정보는 삭제 요청 시 지체 없이 파기됩니다.
+    </p>
+
+    <footer>
+      <p>SomeWay · 개발자 문의: ckyw0818@gmail.com</p>
+    </footer>
+  </div>
+</body>
+</html>
